@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "santa-2023"
+version = "0.1.0"
+description = ""
+authors = ["Igor Braun <igor.braun@codecentric.de>"]
+readme = "README.md"
+packages = [{include = "santa_2023"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.1.4"
+black = {extras = ["jupyter"], version = "^23.12.0"}
+sympy = "^1.12"
+tqdm = "^4.66.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.27.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
